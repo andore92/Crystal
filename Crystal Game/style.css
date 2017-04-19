@@ -1,0 +1,72 @@
+p {
+	
+	font-family: 'Final Fantasy';
+	font-size: 20px;
+}
+
+h3 {
+	font-family: 'Final Fantasy';
+	font-size: 30px;
+}
+
+h1 {
+	font-size: 100px;
+	font-family: 'Final Fantasy';
+
+}
+
+h2 {
+	font-size: 50px;
+	font-family: 'Final Fantasy';
+}
+
+body {
+	background-image: url("images/EAKU5Eq.jpg")
+
+}
+
+img {
+	height:60px;
+	width:60px;
+	border:2px solid black;
+	border-radius: 10px
+}
+
+img:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 10px black;
+}
+
+img:active {
+	box-shadow: 1px 1px 5px black;
+}
+
+
+
+h1, h2, h3, p, button {
+	text-transform: uppercase;
+
+}
+
+.instructions {
+	display: none;
+	
+}
+
+.dropdown:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.stats p {
+	font-size: 25px;
+}
+
+@font-face {
+
+/*This font shows up in IE, but not Chrome or Firefox*/
+font-family: 'Final Fantasy';
+font-weight: normal;
+font-style: normal;
+src: local('Final Fantasy'), url('finalf.ttf') format('truetype'); 
+}

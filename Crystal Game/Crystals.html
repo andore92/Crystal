@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Game</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	
+<!-- Page Layout -->
+<div class="container">
+
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Crystal Collector</h1>
+			</div><!-- close col div -->
+		</div><!-- close row div -->
+
+		
+		<br></br>
+	
+
+	<div class="row">
+
+		<div class="col-md-6 text-center">
+			<div class="panel panel-default">
+	 			<div class="panel-body">
+					<div class="col-md-12">
+						<h2>Match This Number: <span id="numberGuess"></span>
+						</h2>
+					</div> <!-- close col div -->
+					<div class="col-md-12">
+						<h2>Your Current Number: <span class="guessdisplay">0</span></h2>
+					</div> <!-- close col div -->
+
+					<div class="col-md-12">
+					
+						<div class="col-md-2 col-md-offset-2 crystal">
+							<img class="bluecrystal " src="images/blue.png">
+						</div> <!-- close col div -->
+						<div class="col-md-2 crystal">
+							<img class="redcrystal " src="images/red.png">
+						</div> <!-- close col div -->
+						<div class="col-md-2 crystal">
+							<img class="yellowcrystal " src="images/yellow.png">
+						</div> <!-- close col div -->
+						<div class="col-md-2 crystal">
+							<img class="greencrystal " src="images/green.png">
+						</div> <!-- close col div -->
+					</div> <!-- close col div -->
+				</div><!--close panel body -->
+			</div><!-- close panel -->
+		</div><!-- close col div -->
+
+		<div class="col-md-6">
+			 <div class="panel panel-default">
+	 			<div class="panel-body">
+					<div class="col-md-12 text-center stats">
+						<h2 class="underline">Stats</h2>
+						<p>Wins: <span id="winsdisplay">0</span></p>
+						<p>Losses: <span id="lossesdisplay">0</span></p>
+					</div> <!-- close col div -->
+				</div>
+			</div>
+		</div><!-- close col div -->
+	</div><!-- close row div -->
+	<div class="row">
+		<div class="col-md-12 text-center">
+			
+			<h3 class="dropdown">
+			<button type="button" class="btn btn-default">Instructions</button>
+			</h3>
+			<div class="panel panel-default">
+	 			<div class="panel-body">
+					<div class="instructions col-md-8 col-md-offset-2">
+						<p>You are given a random number at the start of the game. Your goal is to click on the crystals and get your total score to match this number.</p>
+						<p>Clicking on a crystal will add a set amount of points to your total score.</p>
+						<p>The value of each crystal is hidden from you until you click on it.</p>
+						<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+						<p>Each time the game starts, the crystals will get a new random value.</p>
+					</div><!-- close instructions -->
+				</div><!-- close panel body -->
+			</div><!-- close panel -->
+		</div><!-- close col -->
+	</div><!-- close row -->
+		
+	<!-- background music -->
+	<audio src="ff7theme.mp3" autoplay loop></audio> 
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	
+
+</div> <!-- close container div -->
+</body>
+</html>
